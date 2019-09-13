@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio | Nathaniel Mosco</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/c677236274.js"></script>
+</head>
+
+<body>
+    <main>
+        <header class="fade">
+            <h1>WELCOME TO NATHANIEL MOSCO'S PORTFOLIO</h1>
+            <i>I am a full stack web developer. I love web design and problem solving with the amazing tools technology provides. I am here to help you with your web development needs.</i>
+            <a href="#projects"><button>🠛</button></a>
+        </header>
+
+        <sections id="tabs">
+            <button class="tabButton activeButton" data-page="projects">Projects</button>
+            <button class="tabButton" data-page="bio">Bio</button>
+            <button class="tabButton" data-page="resume">Resume</button>
+
+            <div id="icons">
+                <a href="https://twitter.com/MoscoNathaniel" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/natemosco" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </sections>
+
+        <section id="resume" class="hide">
+
+        </section>
+
+        <section id="bio" class="hide">
+
+        </section>
+
+        <section id="projects" class="show">
+            <aside class="home">
+                <section class="intro">
+                    <h2>EVOLUTION OF NATHANIEL'S WEB DEVELOPMENT</h2>
+                    <i>Web design is an evolution. Below you can take a journey through the evolution of my work.
+                        All designs can be used as a starting template for future work
+                        Most importantly you can see my knowledge base grow from project to project.
+                    </i>
+                    <img src="./media/familyphoto.jpg" alt="Nathaniel's family photo" class="hero">
+                </section>
+                <section class="card-container">
+                    <div class="card">
+                        <!-- NEEDS TO BE PROPERLY PUBLISHED. ERROR FOR SOME REASON ON GIT PAGES -->
+                        <p class="">September 10, 2019 </p>
+                        <h2>Lambda Calculator Build</h2>
+                        <a href="https://natemosco.github.io/lambda-calculator/"><img src="./media/lambda-calculator.jpg" alt="Red Calculator"></a>
+                        <p>This is a functional calculator built using react and programmed with Javascript using the eval method on strings due to the project requirment of using calculations based off of strings. Html and css were applied here as well.</p>
+                        <a href="https://github.com/natemosco/lambda-calculator"><button class="card-button">Github Repo</button></a>
+                    </div>
+                    <div class="card">
+                        <!-- NEEDS TO BE PROPERLY PUBLISHED. ERROR FOR SOME REASON ON GIT PAGES -->
+                        <p class="date">September 09, 2019</p>
+                        <h2>Lambda Scoreboard Build</h2>
+                        <a href="https://natemosco.github.io/react-american-football-scoreboard/"><img src="./media/lambda-scoreboard.jpg" alt="Image of a football scoreboard"></a>
+                        <p>This was the introduction to React and setState. We used this to build buttons to keep score on this board. </p>
+                        <a href="https://github.com/natemosco/react-american-football-scoreboard"><button class="card-button">Github Repo</button></a>
+                    </div>
+                    <div class="card">
+                        <p class="date">September 06, 2019</p>
+                        <h2>Sprint Challenge: Newspaper</h2>
+                        <!-- NEEDS TO BE MERGED IN ORDER TO PUBLISH ON GIT PAGES -->
+                        <img src="./media/Applied-JS-Sprint-Lambda-Times.jpg" alt="Image of newspaper article">
+                        <p>This was a timed challenge using html, and Less to create an entry for a newspaper. The data is being acquired with axios from an API. Additionally there was the creation of a carousel that loops infinitely. Pretty cool implementation.</p>
+                        <a href="https://github.com/natemosco/Sprint-Challenge-Applied-Javascript/tree/nathaniel-mosco"><button class="card-button">Github Repo</button></a >
+                    </div>
+                    <div class="card">
+                            <!-- cannot publish site because it was never merged -->
+                            <p class="date">September 05,</p>
+                            <h2>GitHub User Card</h2>
+                            <img src="./media/github-usercard-applied-js.jpg" alt="Webpage of cards populated with user image and github profile stats.">
+                            <p>This project used axios to retrieve data and javascript to map throught the data to build out each persons card.   </p>
+                            <a href="https://github.com/natemosco/github-usercard/tree/nathaniel-mosco"><button class="card-button">Github Repo</button></a>
+                    </div>
+                    <div class="card">
+                        <p class="date">September 04, 2019</p>
+                        <h2>Newsfeed Components</h2>
+                        <img src="./media/newsfeed-components-applied-js.jpg">
+                        <p>This site was build to test the use of collapsible menu and newsfeed components.This is handled by using click events and manipulating the DOM.</p>
+                        <a href="https://github.com/natemosco/Newsfeed-Components/tree/nathaniel-mosco"><button class="card-button">Github Repo</button></a>
+                    </div>
+                    <div class="card">
+                        <p class="date">August 29, 2019</p>
+                        <h2>Receipt Tracker</h2>
+                        <img src="./media/receipt-tracker.jpg" alt="Receipt Tracker webpage screenshot">
+                        <p>This site is the landing page for a receit tracking platform called Receipt Tracker. This displays the use of html, css and less. The results are the product of a team collaboration over 4 days. My first Build Week Project.</p>
+                        <a href="https://build-week-ft-receipt-tracking-aug2019.github.io/Marketing-Page/"><button class="card-button">Github Repo</button></a>
+                    </div>
+
+
+                </section>
+            </aside>
+            <footer>
+                <div>
+                    <pre>ADDRESS   </pre>
+                    <span>
+                        1200 N.Quarry Rd. AptB1207
+                        Marion, IN 46952
+                    </span>
+                </div>
+                <div>
+                    <pre>PHONE   </pre>
+                    <a href="tel:1-765-382-6061">+1 (765) 382-6061</a>
+                </div>
+                <div>
+                    <pre>EMAIL   </pre>
+                    <a href="mailto:natemosco@gmail.com">
+                        natemosco@gmail.com
+                    </a>
+                </div>
+                <div>
+                    <pre>SOCIAL  </pre>
+                    <span>
+                        <a href="https://github.com/natemosco" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/MoscoNathaniel" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </span>
+                </div>
+            </footer>
+        </section>
+
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

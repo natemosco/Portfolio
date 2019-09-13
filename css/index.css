@@ -1,0 +1,253 @@
+* {
+  text-align: center;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+p,
+i,
+h1 {
+  max-width: 60ch;
+}
+p,
+i {
+  font-family: 'Merriweather', serif;
+  letter-spacing: 1.5px;
+}
+pre ~ a {
+  border: none;
+  text-decoration: none;
+  border-bottom: 2px dotted #bbb;
+}
+.show {
+  display: block !important;
+}
+.hide {
+  display: none !important;
+}
+main {
+  background: linear-gradient(0deg, #2227, #2227), url("../media/main-background.jpg") 100% / cover no-repeat fixed;
+  min-height: 100vh;
+  width: 100vw;
+  padding-top: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+header {
+  width: 100vw;
+  min-height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header h1 {
+  max-width: 20ch;
+  font-size: 8rem;
+  color: #000000;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+}
+header i {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+  background: transparent;
+}
+header button {
+  margin-top: 30px;
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  color: #000000a3;
+  font-size: 3rem;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.5s;
+}
+header button:hover {
+  color: steelblue;
+  border-color: steelblue;
+}
+#tabs {
+  height: 60px;
+  margin-top: 20px;
+  width: 80%;
+  background: #fff4;
+  position: relative;
+  display: flex;
+}
+#tabs button {
+  height: 100%;
+  width: auto;
+  background: transparent;
+  border: none;
+  color: black;
+  padding: 0 30px;
+  font-weight: 700;
+  transition: 0.5s ease;
+}
+#tabs button:hover {
+  background: #fff5;
+  cursor: pointer;
+}
+#tabs .activeButton {
+  background: white !important;
+}
+#tabs #icons {
+  height: 100%;
+  width: auto;
+  padding: 0 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+#tabs #icons i {
+  color: white;
+  margin-right: 30px;
+  font-size: 2.2rem;
+  transition: 0.5s;
+}
+#tabs #icons i:hover {
+  color: steelblue;
+}
+#resume {
+  min-height: 100vh;
+  background: #a9cbd4;
+  width: 80%;
+}
+#bio {
+  display: none;
+  min-height: 100vh;
+  background: #a9cbd4;
+  width: 80%;
+}
+#projects {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #a9cbd4;
+}
+#projects .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#projects .intro h2 {
+  font-size: 4rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+}
+#projects .intro i {
+  font-size: 1.6rem;
+  margin-bottom: 50px;
+  text-align: center;
+}
+#projects .intro img {
+  object-fit: scale-down;
+}
+#projects .card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media (max-width: 1300px) {
+  #projects .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#projects .card-container .card {
+  padding: 40px 0;
+  width: 40%;
+  margin-top: 100px;
+  border: 1px solid #ddd;
+  background: snow;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 1300px) {
+  #projects .card-container .card {
+    width: 75%;
+  }
+}
+#projects .card-container .card h2 {
+  font-size: 4rem;
+}
+#projects .card-container .card p {
+  font-size: 1.8rem;
+}
+#projects .card-container .card .card-button {
+  background: black;
+  border: 2px solid transparent;
+  color: #eee;
+  padding: 15px 25px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+#projects .card-container .card .card-button:hover {
+  background: transparent;
+  color: black;
+  border: 2px solid black;
+}
+#projects .card-container .card img {
+  width: 100%;
+  height: 350px;
+  object-fit: scale-down;
+}
+#projects footer {
+  display: flex;
+  justify-content: space-between;
+  background: #f5f5f5;
+  margin-top: 100px;
+}
+#projects footer div {
+  min-height: 40px;
+  border-right: 2px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+}
+#projects footer * {
+  font-size: 1.4rem;
+  color: #717981;
+}
+#projects footer i {
+  color: #717981;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  padding: 4px;
+}
+.fade {
+  animation: fade 4s ease-in;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
