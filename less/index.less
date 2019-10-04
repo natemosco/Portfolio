@@ -115,6 +115,7 @@ header{
         background:#fff5;
         cursor:pointer;
     }
+    
     .activeButton{
         background:white !important;
     }
@@ -140,7 +141,7 @@ header{
     }
 }
 
-#resume{
+#contact{
     min-height:100vh;
     background:@blue;
     width: 80%;
@@ -204,7 +205,10 @@ header{
             display: flex;
             flex-direction: column;
             align-items: center;
-
+            .click-me:hover{
+                scale: 1.2;
+                overflow: hidden;
+            }
             @media (max-width:1300px){
                 width: 75%;
             }
