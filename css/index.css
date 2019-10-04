@@ -126,13 +126,12 @@ header button:hover {
 #tabs #icons i:hover {
   color: steelblue;
 }
-#resume {
+#contact {
   min-height: 100vh;
   background: #a9cbd4;
   width: 80%;
 }
 #bio {
-  display: none;
   min-height: 100vh;
   background: #a9cbd4;
   width: 80%;
@@ -186,6 +185,11 @@ header button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
+}
+#projects .card-container .card .click-me:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
 }
 @media (max-width: 1300px) {
   #projects .card-container .card {
